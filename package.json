@@ -30,9 +30,9 @@
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods",
-    "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook",
-    "storybook:web": "./node_modules/@storybook/react/bin/index.js"
+    "storybook:server": "start-storybook -p 7007",
+    "storybook:web": "./node_modules/@storybook/react/bin/index.js",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "react-native",
