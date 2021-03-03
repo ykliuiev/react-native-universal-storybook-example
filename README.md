@@ -10,18 +10,10 @@ npm install react-native-universal-storybook
 
 ## Usage
 
-```js
-import UniversalStorybook from "react-native-universal-storybook";
-
-// ...
-
-const result = await UniversalStorybook.multiply(3, 7);
-```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+This is an example how you can use storybook with react native and react native web to render components for ios/android/web. You can check the Example/ folder to run ios/android project or see how components are rendered on the web with the help of next.js.
 
 ## License
 
 MIT
+
+## This project is currently work in progress
