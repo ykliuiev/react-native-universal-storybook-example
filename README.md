@@ -17,7 +17,7 @@ You can run storybook directly on device and control view on multiple devices wi
 - Run yarn storybook:server from root directory
 - cd example/ start bundler with yarn start, run react-native run-ios
 
-![Running native storybook](https://lh5.googleusercontent.com/fUcnC0HvV4nOYomQJ3UB5YdnGI3IJ0p9a4ep8wDCKwECbOMUGoyURqnFvzgFyTdKj_aNzW0AxCI8JIzNypWd=w1920-h976)
+![Running native storybook](https://i.imgur.com/ODDf3zK.gif)
 
 ### Running web storybook
 - just run storybook:web command
