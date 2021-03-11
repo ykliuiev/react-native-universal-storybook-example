@@ -1,17 +1,8 @@
-module.exports = {
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...(config.resolve.alias || {}),
-      // Transform all direct `react-native` imports to `react-native-web`
-      'react-native$': 'react-native-web',
-    };
-    config.resolve.extensions = [
-      '.web.js',
-      '.web.ts',
-      '.web.tsx',
-      ...config.resolve.extensions,
-    ];
+const { withExpo } = require('@expo/next-adapter');
 
+module.exports = withExpo({
+  projectRoot: __dirname,
+  webpack: (config) => {
     config.module.rules.forEach((rule) => {
       if (rule.test && rule.test.toString().includes('tsx|ts')) {
         rule.include = [
@@ -23,4 +14,4 @@ module.exports = {
 
     return config;
   },
-};
+});
